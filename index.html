@@ -4,47 +4,56 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>نی نی لک لک</title>
-.btn{
-display:inline-block;
-background:#25D366;
-color:white;
-padding:12px 25px;
-border-radius:10px;
-text-decoration:none;
-margin-top:10px;
-}
 
-.product:hover{
-  transform:scale(1.03);
-  transition:0.3s;
-}
-
-</style>
 <style>
 body{
-font-family:tahoma;
-background:#fff5f8;
 margin:0;
-padding:10px;
-text-align:center;
+font-family:tahoma;
+background:#f5f5f5;
 }
 
-h1{
+.header{
+background:#fff;
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
 color:#ff4d94;
 }
 
+.search{
+width:55%;
+padding:10px;
+border:1px solid #ddd;
+border-radius:8px;
+}
+
+.products{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+padding:20px;
+}
+
 .product{
-background:white;
-max-width:320px;
-margin:20px auto;
+background:#fff;
+width:280px;
 padding:15px;
-border-radius:18px;
-box-shadow:0 5px 15px rgba(0,0,0,.15);
+border-radius:15px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+text-align:center;
 }
 
 .product img{
 width:100%;
-border-radius:15px;
+border-radius:10px;
 }
 
 .price{
@@ -57,120 +66,47 @@ font-weight:bold;
 display:inline-block;
 background:#25D366;
 color:white;
-padding:12px 25px;
-border-radius:10px;
+padding:10px 20px;
+border-radius:8px;
 text-decoration:none;
-margin-top:10px;
 }
 </style>
 
 </head>
-
 <body>
-<div style="background:white;padding:15px;border-radius:12px;margin-bottom:20px;display:flex;justify-content:space-between;align-items:center;">
-  <strong>🛍 نی نی لک لک</strong>
-  <input type="text" placeholder="جستجوی محصول..." style="padding:8px;width:45%;">
-  <span>🛒</span>
-</div>
-<h1>💙 نی نی لک لک 💗</h1>
 
-<div class="product">
-<img src="file_0000000003207243ad98efd42156a14f.png" width="250">
-<img src="file_000000003207243ad98efd42156a14f.png">
-<img src="file_000000000d8c71f4bb54508034635912.png" width="250">
+<div class="header">
+<div class="logo">🛍 نی نی لک لک</div>
+<input class="search" type="text" placeholder="🔍 جستجوی محصول">
+<div>🛒</div>
+</div>
+
+<div class="products">
+  <div class="product">
+<img src="file_0000000003207243ad98efd42156a14f.png">
 <h2>کراپ تک مشکی</h2>
-
-<p>کیفیت عالی، نخ پنبه، بدون مواد پلاستیکی</p>
-
-<p>مناسب ۱ تا ۱۰ سال</p>
-
-<p>سایز ۱ تا ۵ موجود</p>
-
+<p>کیفیت عالی، نخ پنبه</p>
 <p class="price">۱۹۹,۰۰۰ تومان</p>
-
-<a class="btn" href="https://wa.me/989903465119">
-💚 سفارش در واتساپ
-</a>
-
+<a class="btn" href="https://wa.me/989903465119">💚 سفارش</a>
 </div>
 
-
 <div class="product">
-<img src="پیراهن مشکی مهمونی خنک.jpg" width="250">
-<img src="pirahan.jpg">
-<img src="Le.jpg" width="250">
+<img src="پیراهن مشکی مهمونی خنک.jpg">
 <h2>سارافون محرمی مجلسی</h2>
-
-<p>مناسب ۲ تا ۷ سال</p>
-<div class="product">
-
-<img src="پیراهن مشکی مهمونی خنک.jpg" width="250">
-
-<h2>🖤 سارافون محرمی، مجلسی، مهمونی 💃🌹</h2>
-
-<p>گاهی زیبایی در سادگی هست 🍄🌼</p>
-
-<p>📌 این مدل با طراحی یقه جذاب و تن‌خور بسیار راحت، انتخابی عالی برای مراسم محرم و مهمانی است.</p>
-
-<p>✅ دوخت مزونی، کیفیت ۱۰۰٪ تضمینی</p>
-<p>✅ پارچه شانتون خنک و راحت</p>
-<p>✅ سایزبندی: ۴۰، ۴۵، ۵۰</p>
-
-<p>🥀 سایز ۴۰: قد ۵۸ | پهنا ۲۸</p>
-<p>🥀 سایز ۴۵: قد ۶۴ | پهنا ۳۰.۵</p>
-<p>🥀 سایز ۵۰: قد ۷۲ | پهنا ۳۴</p>
-
-<p>📏 لطفاً ۱ تا ۲ سانتی‌متر خطای اندازه‌گیری را در نظر بگیرید.</p>
-
-<p class="price">💰 قیمت: ۵۹۹,۰۰۰ تومان</p>
-
-<a class="btn" href="https://wa.me/989903465119">
-💚 ثبت سفارش در واتساپ
-</a>
-
-                               </div>
+<p>پارچه شانتون، دوخت مزونی</p>
 <p class="price">۵۹۹,۰۰۰ تومان</p>
-
-<a class="btn" href="https://wa.me/989903465119">
-💚 سفارش در واتساپ
-</a>
-
+<a class="btn" href="https://wa.me/989903465119">💚 سفارش</a>
 </div>
-
 
 <div class="product">
-
 <img src="kuromi.jpg">
-<img src="file_00000000eeac720a9c84ca3d8235a57a.png" width="250">
-<h2>🌸 صندل کرومی 🌸</h2>
-
-<p>
-🥰 وقتی میای با این صندل‌ها،
-صدای پاتو که می‌شناسمش 😍
-</p>
-
-<p>✅ بسیار نرم و راحت</p>
-
-<p>✅ دارای ۳ رنگ</p>
-
-<p>✅ اصلاً خشک نیست</p>
-
-<p>📏 سایز ۲۷ : ۱۷.۵</p>
-
-<p>📏 سایز ۲۸ : ۱۸</p>
-
-<p>📏 سایز ۲۹ : ۱۸.۸</p>
-
-<p class="price">
-۵۸۰,۰۰۰ تومان
-</p>
-
-<p>🚚 ارسال فوری</p>
-
-<a class="btn" href="https://wa.me/989903465119">
-💚 ثبت سفارش
-</a>
+<h2>صندل کرومی</h2>
+<p>بسیار نرم و راحت</p>
+<p class="price">۵۸۰,۰۰۰ تومان</p>
+<a class="btn" href="https://wa.me/989903465119">💚 سفارش</a>
 </div>
+
 </div>
+
 </body>
 </html>
