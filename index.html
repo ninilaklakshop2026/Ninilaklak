@@ -2,113 +2,248 @@
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>نی نی لک لک</title>
 
 <style>
-body{
+
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
 font-family:tahoma;
-background:#f5f5f5;
 }
 
-.header{
+body{
+background:#f7f7f7;
+}
+
+.header-cover{
+height:180px;
+background:linear-gradient(45deg,#ff7ab8,#ff4d94);
+}
+
+.shop-card{
+width:92%;
+margin:-60px auto 20px;
 background:#fff;
-padding:15px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-box-shadow:0 2px 8px rgba(0,0,0,.1);
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.12);
+padding:20px;
+text-align:center;
 }
 
 .logo{
-font-size:22px;
-font-weight:bold;
-color:#ff4d94;
+width:95px;
+height:95px;
+border-radius:50%;
+border:4px solid #fff;
+margin-top:-70px;
+object-fit:cover;
+background:#fff;
+}
+
+.shop-card h1{
+font-size:28px;
+margin:10px 0;
+color:#333;
+}
+
+.shop-card p{
+color:#666;
+line-height:30px;
+}
+
+.buttons{
+display:flex;
+gap:10px;
+justify-content:center;
+flex-wrap:wrap;
+margin-top:15px;
+}
+
+.btn{
+padding:10px 18px;
+border-radius:10px;
+color:#fff;
+text-decoration:none;
+font-size:15px;
+}
+
+.whatsapp{
+background:#25D366;
+}
+
+.eitaa{
+background:#0d6efd;
+}
+
+.basalam{
+background:#ff9800;
 }
 
 .search{
-width:55%;
-padding:10px;
-border:1px solid #ddd;
-border-radius:8px;
+width:92%;
+margin:auto;
+margin-bottom:20px;
+}
+
+.search input{
+width:100%;
+padding:14px;
+border:none;
+border-radius:12px;
+font-size:16px;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+outline:none;
 }
 
 .products{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:20px;
-padding:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:18px;
+padding:15px;
 }
 
 .product{
-background:#fff;
-width:280px;
+background:white;
+border-radius:18px;
 padding:15px;
-border-radius:15px;
-box-shadow:0 2px 10px rgba(0,0,0,.1);
-text-align:center;
+box-shadow:0 3px 12px rgba(0,0,0,.12);
+}.product:hover{
+transform:translateY(-5px);
+transition:.3s;
 }
 
 .product img{
 width:100%;
-border-radius:10px;
+border-radius:15px;
+margin-bottom:10px;
+}
+
+.product h2{
+font-size:20px;
+color:#333;
+margin:10px 0;
+}
+
+.desc{
+color:#666;
+line-height:28px;
+font-size:14px;
 }
 
 .price{
-color:red;
-font-size:22px;
+color:#e91e63;
+font-size:24px;
 font-weight:bold;
+margin:15px 0;
 }
 
-.btn{
-display:inline-block;
+.buy{
+display:block;
+width:100%;
+padding:12px;
 background:#25D366;
 color:white;
-padding:10px 20px;
-border-radius:8px;
+text-align:center;
 text-decoration:none;
+border-radius:12px;
+margin-top:10px;
+font-size:16px;
 }
+
 </style>
 
 </head>
+
 <body>
 
-<div class="header">
-<div class="logo">🛍 نی نی لک لک</div>
-<input class="search" type="text" placeholder="🔍 جستجوی محصول">
-<div>🛒</div>
+<div class="header-cover"></div>
+
+<div class="shop-card">
+
+<img class="logo" src="logo.png">
+
+<h1>نی نی لک لک</h1>
+
+<p>
+🌸 فروشگاه لباس کودک و نوزاد<br>
+ارسال به سراسر ایران 🚚
+</p>
+
+<div class="buttons">
+
+<a class="btn whatsapp" href="https://wa.me/989903465119">واتساپ</a>
+
+<a class="btn eitaa" href="https://eitaa.com/nini_laklak8">ایتا</a>
+
+<a class="btn basalam" href="https://basalam.com/nini_gol">باسلام</a>
+
+</div>
+
+</div>
+
+<div class="search">
+
+<input placeholder="جستجوی محصول...">
+
 </div>
 
 <div class="products">
-  <div class="product">
+<div class="product">
+
 <img src="file_0000000003207243ad98efd42156a14f.png">
+
 <h2>کراپ تک مشکی</h2>
-<p>کیفیت عالی، نخ پنبه</p>
-<p class="price">۱۹۹,۰۰۰ تومان</p>
-<a 
-  <a class="btn" href="https://wa.me/989903465119">💚 سفارش</a>
 
-<a class="btn" href="https://eitaa.com/nini_laklak8">💙 ایتا</a>
+<p class="desc">
+کیفیت عالی، نخ پنبه<br>
+مناسب ۱ تا ۱۰ سال<br>
+سایز ۱ تا ۵ موجود
+</p>
+
+<div class="price">۱۹۹,۰۰۰ تومان</div>
+
+<a class="buy" href="https://wa.me/989903465119">💚 سفارش</a>
 
 </div>
-</div>
+
 
 <div class="product">
+
 <img src="پیراهن مشکی مهمونی خنک.jpg">
+
 <h2>سارافون محرمی مجلسی</h2>
-<p>پارچه شانتون، دوخت مزونی</p>
-<p class="price">۵۹۹,۰۰۰ تومان</p>
-<a class="btn" href="https://wa.me/989903465119">💚 سفارش</a>
+
+<p class="desc">
+پارچه شانتون<br>
+دوخت مزونی<br>
+مناسب ۲ تا ۷ سال
+</p>
+
+<div class="price">۵۹۹,۰۰۰ تومان</div>
+
+<a class="buy" href="https://wa.me/989903465119">💚 سفارش</a>
+
 </div>
 
+
 <div class="product">
+
 <img src="kuromi.jpg">
+
 <h2>صندل کرومی</h2>
-<p>بسیار نرم و راحت</p>
-<p class="price">۵۸۰,۰۰۰ تومان</p>
-<a class="btn" href="https://wa.me/989903465119">💚 سفارش</a>
+
+<p class="desc">
+بسیار نرم و راحت<br>
+دارای ۳ رنگ
+</p>
+
+<div class="price">۵۸۰,۰۰۰ تومان</div>
+
+<a class="buy" href="https://wa.me/989903465119">💚 سفارش</a>
+
 </div>
 
 </div>
