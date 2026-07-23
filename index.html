@@ -140,9 +140,7 @@ outline:none;
 
 .products{
 display:flex;
-flex-direction:column;
-gap:15px;
-padding:15px;
+overflow-x:auto;
 gap:15px;
 padding:15px;
 scroll-behavior:smooth;
@@ -151,7 +149,7 @@ scroll-behavior:smooth;
 .products::-webkit-scrollbar{
 display:none;
 }
-
+}
 .product{
 flex:0 0 210px;
 background:#fff;
@@ -177,7 +175,9 @@ object-fit:contain;
 border-radius:14px;
 margin-bottom:12px;
 }
-  
+width:100%;
+border-radius:15px;
+margin-bottom:10px;
 }
 
 .product h2{
@@ -256,7 +256,23 @@ opacity:.9;
 
 <div class="categories">
 
-<div style="display:flex;justify-content:space-between;align-items:center;padding:0 15px 10px;">
+<a href="#">👗 دخترانه</a>
+
+<a href="#">👕 پسرانه</a>
+
+<a href="#">👶 نوزادی</a>
+
+<a href="#">🔥 حراج</a>
+
+</div>
+
+
+</div>
+<h2 style="padding:15px 15px 5px;font-size:22px;font-weight:bold;color:#333;">
+⭐ جدیدترین محصولات
+</h2><p style="padding:0 15px 10px;color:#777;font-size:14px;">
+پرفروش‌ترین لباس‌های فروشگاه
+</p><div style="display:flex;justify-content:space-between;align-items:center;padding:0 15px 10px;">
   <span style="font-size:18px;font-weight:bold;">⭐ جدیدترین محصولات</span>
   <a href="#" style="text-decoration:none;color:#ff5a5f;font-size:14px;">مشاهده همه</a>
 </div>
@@ -265,11 +281,11 @@ opacity:.9;
 
 <img src="file_0000000003207243ad98efd42156a14f.png">
 
-<h2><a href="محصول1.html">کراپ تک مشکی</a></h2>
+<h2>کراپ تک مشکی</h2>
+
 <p class="desc">
 کیفیت عالی، نخ پنبه<br>
 مناسب ۱ تا ۱۰ سال<br>
-  
 سایز ۱ تا ۵ موجود
 </p>
 <div class="price">
